@@ -4,8 +4,8 @@
 	"description": "'# Hello VuePress!'",
 	"main": "index.js",
 	"scripts": {
-		"dev": "vuepress dev docs",
-    	"build": "vuepress build docs"
+		"start": "vuepress dev docs",
+		"build": "vuepress build docs"
 	},
 	"repository": {
 		"type": "git",
