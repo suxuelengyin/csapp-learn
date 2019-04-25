@@ -10,20 +10,17 @@ module.exports = {
             { text: 'Blog', link: 'https://www.suxuewb.cn' },
             { text: 'GitHub', link: 'https://github.com/suxuelengyin/csapp-learn' },
         ],
-        sidebar: {
-            '/start/': genWhySidebarConfig('为什么')
-        }
+        sidebar: [
+            genWhySidebarConfig('环境配置', '/start/', ['one']),
+            genWhySidebarConfig('计算机系统漫游', '/one/', [])
+        ]
     }
 }
-function genWhySidebarConfig (title) {
-    return [
-      {
+function genWhySidebarConfig(title, path, children = []) {
+    return {
         title,
         collapsable: false,
-        children: [
-          '',
-          'one',
-        ]
-      }
-    ]
-  }
+        children: [path, ...children.map(item => path + item)]
+    }
+
+}
