@@ -2,7 +2,7 @@
 home: true
 description: 以程序员的视角理解计算机系统
 actionText: 开始 →
-actionLink: /start/
+actionLink: /environment/
 features:
 - title: 全面覆盖
   details: 涵盖计算机的大部分知识，深入浅出，包括最底层的内存中的数据表示、流水线指令的构成、虚拟存储器、编译系统、动态加载库，以及用户应用等。
