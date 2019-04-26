@@ -19,7 +19,7 @@ module.exports = {
 		],
 		sidebar: [
 			genWhySidebarConfig('环境配置', '/environment/', ['start']),
-			genWhySidebarConfig('计算机系统漫游', '/one-guide/', [])
+			genWhySidebarConfig('计算机系统漫游', '/one-guide/', ["compilation","deal"])
 		]
 	},
 
