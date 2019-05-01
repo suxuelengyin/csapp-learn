@@ -3,7 +3,8 @@ module.exports = {
 	title: "CSAPP 阅读指南",
 	head: [
 		['link', { rel: 'icon', href: `/favicon.ico` }],
-		['link', { rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css" }]
+		['link', { rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css" }],
+		['meta', { name: "referrer", content: "no-referrer" }]
 	],
 	markdown: {
 		extendMarkdown: md => {
@@ -19,7 +20,7 @@ module.exports = {
 		],
 		sidebar: [
 			genWhySidebarConfig('环境配置', '/environment/', ['start']),
-			genWhySidebarConfig('计算机系统漫游', '/one-guide/', ["compilation","deal","operating"])
+			genWhySidebarConfig('计算机系统漫游', '/one-guide/', ["compilation", "deal", "operating","important"])
 		]
 	},
 

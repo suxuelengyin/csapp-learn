@@ -44,22 +44,27 @@ hello world
 此过程可分为三个阶段
 
 1. **shell 命令行键入`./hello`。** shell 程序将字符逐一读入存储器，再把它放到主存中，如下图：
-![shell](https://suxue-1258707934.cos.ap-beijing.myqcloud.com/1556374421(1).png)
+![shell](http://ww1.sinaimg.cn/large/e1b0b6d4ly1g2hjlhms50j20ns0gyn7p.jpg)
 2. **按下 Enter 键，shell 程序加载 hello 文件。** 这些指令将 hello 文件中的代码和数据从磁盘复制到主存，步骤如下：
-![加载](https://suxue-1258707934.cos.ap-beijing.myqcloud.com/1556375086.png)
+![加载](http://ww1.sinaimg.cn/large/e1b0b6d4ly1g2hju4l3f3j20lh0fu7gi.jpg)
 3. **处理器执行 hello。** 在 CPU 中执行代码，结果从主存复制到寄存器文件，再从寄存器复制到显示设备，最终显示在屏幕上：
-![输出](https://suxue-1258707934.cos.ap-beijing.myqcloud.com/1556419834(1).png)
+![输出](https://ws1.sinaimg.cn/large/e1b0b6d4ly1g2hk6cgio2j20oo0gcws4.jpg)
 
 ## 高速缓存
 
 上面的示例，我们会发现，系统花费了大量的时间把信息从一个地方挪到另一个地方。因此，系统设计者的一个主要目标就是是这些操作尽可能快的完成。  
 
 **高速缓存存储器**可以存放处理器近期可能会需要的信息，由于紧邻寄存器，其 I/O 效率非常高：
-![高速缓存](https://suxue-1258707934.cos.ap-beijing.myqcloud.com/1556420360(1).png)
+![高速缓存](https://ws1.sinaimg.cn/large/e1b0b6d4ly1g2i5ykmtxqj20md09vn46.jpg)
 程序员利用高速缓存器可以将性能提高一个数量级！
 
 ## 存储层次结构
 
 在处理器和一个较大较慢的设备之间插入一个更小更快的存储设备的想法已经成为一个普遍的概念。这样的想法使得计算机系统中存储设备形成了一个金字塔形式的**存储器层次结构**。如下图：
-![存储器层次结构](https://suxue-1258707934.cos.ap-beijing.myqcloud.com/1556420655(1).png)
+![存储器层次结构](https://ws1.sinaimg.cn/large/e1b0b6d4ly1g2i63ksjexj20re0gm16i.jpg)
 主要特征就是**上一层的存储器作为低一层的存储器的高速缓存**。
+
+## 网络
+
+网络也算一个 I/O 设备：
+![网络](https://ws1.sinaimg.cn/large/e1b0b6d4ly1g2lt2j4zlij20k10gg48n.jpg)
