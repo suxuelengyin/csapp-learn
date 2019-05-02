@@ -20,7 +20,8 @@ module.exports = {
 		],
 		sidebar: [
 			genWhySidebarConfig('环境配置', '/environment/', ['start']),
-			genWhySidebarConfig('计算机系统漫游', '/one-guide/', ["compilation", "deal", "operating","important"])
+			genWhySidebarConfig('计算机系统漫游', '/one-guide/', ["compilation", "deal", "operating","important"]),
+			genWhySidebarConfig('信息的表示和处理','/message/')
 		]
 	},
 
